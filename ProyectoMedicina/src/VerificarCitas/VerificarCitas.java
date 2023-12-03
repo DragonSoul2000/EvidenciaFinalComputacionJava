@@ -15,7 +15,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class VerificarCitas {
+public class VerificarCitas extends JFrame {
     private JPanel MiPanel;
     private JComboBox CMBIdPaciente;
     private JComboBox CMBIdDoctor;
@@ -184,4 +184,12 @@ public VerificarCitas() {
         }
     });
 }
+    public static void main(String[] args) {
+        VerificarCitas citas= new VerificarCitas();
+        citas.setContentPane(citas.MiPanel);
+        citas.setSize(300,3000);
+        citas.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+        citas.setVisible(true);
+
+    }
 }
